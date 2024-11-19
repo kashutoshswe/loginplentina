@@ -1,0 +1,12 @@
+# .github/dependabot.yml
+version: 2
+updates:
+  - package-ecosystem: "npm" # Use "pip" for Python, "bundler" for Ruby, etc.
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    # Configure auto-merge
+    open-pull-requests-limit: 10
+    versioning-strategy: auto
+    allow:
+      - dependency-type: "direct"
